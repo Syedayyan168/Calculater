@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://media.istockphoto.com/id/1419844586/vector/stem-blue-horizontal-frame-vector-education-bright-illustration.jpg?s=612x612&w=0&k=20&c=-A1eYLYulujNsiM26lkVy7qMT_Hp82N5EtKHSFRmigk=);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.calculator {
+    background: #3a4452;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+}
+
+.calculator form input {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: #4a5568;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.calculator form input:hover {
+    background: #5a6678;
+    box-shadow: 0 0 10px #33ffd8, 0 0 20px #33ffd8, 0 0 30px #33ffd8;
+}
+
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+    background: #2d3748;
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+form input.equal {
+    width: 145px;
+    background: #38a169;
+    color: #fff;
+}
+
+form input.equal:hover {
+    background: #2f855a;
+    box-shadow: 0 0 10px #38a169, 0 0 20px #38a169, 0 0 30px #38a169;
+}
+
+form input.operator {
+    color: #33ffd8;
+}
+
+@media (max-width: 600px) {
+    .calculator {
+        padding: 15px;
+    }
+
+    .calculator form input {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+        margin: 5px;
+    }
+
+    form .display input {
+        font-size: 35px;
+    }
+
+    form input.equal {
+        width: 120px;
+    }
+}
